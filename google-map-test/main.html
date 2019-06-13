@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <title>google-map-restaurants</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            Google Map Restaurant
+        </a>
+    </nav>
+
+    <div class="container">
+
+        <div class="row pb-3 pt-3">
+            <div class="col-12">
+                <!-- #start ค้นหาเขต tag input -->
+                <input type="search" name="county" id="county" class="form-control" placeholder="ค้นหาเขต" autofocus>
+                <!-- #end ค้นหาเขต tag input -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- start map google ที่จะมาแสดงใน div นี้-->
+                <div id="map"></div>
+                <!-- end map google ที่จะมาแสดงใน div นี้-->
+            </div>
+        </div>
+
+
+        <div id="results" class="row pb-3 pt-3">
+        </div>
+
+
+    </div>
+
+</body>
+
+
+<script>
+
+
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOh3DpV4c3IdeW4lOqzrPTll2R22_yEIc&libraries=places&callback=google_map.init">
+    </script>
+<script src="./google_map.js"></script>
+
+</html>
